@@ -1,0 +1,39 @@
+{%extends 'foodapp/base.html' %}
+{%load static%}
+{%block content%}
+<div class="container my-5">
+  <h1 class="text-center mb-4">Our Delicious Menu</h1>
+  
+  <div class="row">
+    <!-- Food Category -->
+    <div class="col-md-6">
+      <div class="card">
+        <img src="{% static 'foodapp/images/menuimg1.jpg'  %}" class="card-img-top" alt="Food Item">
+        <div class="card-body">
+          <h5 class="card-title">Food Item 1</h5>
+          <p class="card-text">Delicious description of the food item goes here.</p>
+          <p class="card-text"><strong>$12.99</strong></p>
+          <button class="btn btn-primary">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Another Food Item -->
+    <div class="col-md-6">
+      <div class="card">
+        <img src="{% static 'foodapp/images/menuimg2.jpg'  %}" class="card-img-top" alt="Food Item">
+        <div class="card-body">
+          <h5 class="card-title">Food Item 2</h5>
+          <p class="card-text">Delicious description of the food item goes here.</p>
+          <p class="card-text"><strong>$8.99</strong></p>
+          <button class="btn btn-primary">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- More Food Items -->
+    <!-- Add more food items here similarly -->
+
+  </div>
+</div>
+{%endblock%}

@@ -1,0 +1,47 @@
+{%extends 'foodapp/base.html'%}
+{%load static%}
+  {% block title %}Food Service Page{%endblock%}
+
+  <!-- Navbar -->
+{%block content%}
+
+  <!-- Hero Section -->
+  <header class="bg-primary text-white text-center py-5">
+    <h1>Delicious Food Delivered to You</h1>
+    <p>Your favorite dishes, now just a click away!</p>
+    <a href="#services" class="btn btn-light">Explore Our Services</a>
+  </header>
+
+  <!-- Services Section -->
+  <section id="services" class="container py-5">
+    <div class="row text-center">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="{% static 'foodapp/images/cateringimg.jpg'  %}" class="card-img-top" alt="Service 1">
+          <div class="card-body">
+            <h5 class="card-title">Catering</h5>
+            <p class="card-text">We offer catering services for all kinds of events. Book today!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="{% static 'foodapp/images/homedelivery.jpg'  %}" class="card-img-top" alt="Service 2">
+          <div class="card-body">
+            <h5 class="card-title">Home Delivery</h5>
+            <p class="card-text">Order your favorite food and have it delivered to your door.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="{% static 'foodapp/images/onlineorder.jpg'  %}" class="card-img-top" alt="Service 3">
+          <div class="card-body">
+            <h5 class="card-title">Online Orders</h5>
+            <p class="card-text">Browse our menu and place an order online. It’s quick and easy!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section
+{%endblock%}

@@ -1,0 +1,38 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.shopping-cart{
+    list-style: none;
+    font-size: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.navbar-nav li a{
+    font-size: 20px;
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+}
+
+.responsive{
+    max-width: 100%;
+    height: auto;
+}
+.footer {
+    background: #3581cd;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-bottom: 0 !important;
+}
